@@ -8,5 +8,11 @@ namespace BusinessEntites
 {
     public class Student : Användare
     {
+
+        public Student()
+        {
+
+        }
+
     }
 }

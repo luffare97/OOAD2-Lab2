@@ -8,5 +8,21 @@ namespace BusinessLayer
 {
     class GenericRepository
     {
+        //public AddToRepo()
+        //{
+
+        //}
+
+        //public Get()
+        //{
+
+        //}
+
+        //public GetAll()
+        //{
+
+        //}
+
+
     }
 }

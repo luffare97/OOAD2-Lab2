@@ -8,5 +8,11 @@ namespace BusinessEntites
 {
     public class Personal : Användare
     {
+        public string Possition { get; set; }
+
+        public Personal()
+        {
+
+        }
     }
 }

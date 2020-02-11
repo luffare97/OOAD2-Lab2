@@ -16,6 +16,9 @@ namespace BusinessEntites
         public string Plats { get; set; }
         public string Beskrivning { get; set; }
 
+        public Aktivitet()
+        {
 
+        }
     }
 }

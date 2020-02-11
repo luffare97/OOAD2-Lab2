@@ -8,7 +8,11 @@ namespace BusinessEntites
 {
     public class Alumn : Användare
     {
-        public int MyProperty { get; set; }
+        public string Ort { get; set; }
+        public string Anställning { get; set; }
+
+        //Kanske DateTime istället?
+        public int ExamensÅr { get; set; }
 
         public Alumn()
         {

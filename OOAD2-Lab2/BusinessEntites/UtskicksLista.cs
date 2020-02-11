@@ -12,5 +12,10 @@ namespace BusinessEntites
         public List<Student> Studenter { get; set; }
         public List<Aktivitet> Aktiviteter { get; set; }
         public string Information { get; set; }
+
+        public UtskicksLista(string Info)
+        {
+            this.Information = Info;
+        }
     }
 }
