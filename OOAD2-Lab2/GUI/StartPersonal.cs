@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class LoggIn : Form
+    public partial class StartPersonal : Form
     {
-        public LoggIn()
+        public StartPersonal()
         {
             InitializeComponent();
-        }
-
-        private void btnLoggaIn_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
