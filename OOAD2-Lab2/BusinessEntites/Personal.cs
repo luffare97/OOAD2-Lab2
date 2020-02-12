@@ -14,5 +14,12 @@ namespace BusinessEntites
         {
 
         }
+
+        public Aktivitet skapaAktivitet()
+        {
+            Aktivitet A = new Aktivitet();
+
+            return A;
+        }
     }
 }

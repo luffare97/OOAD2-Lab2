@@ -13,5 +13,6 @@ namespace BusinessEntites
         public List<Student> Studenter { get; set; }
         public List<Personal> Anställda { get; set; }
 
+
     }
 }

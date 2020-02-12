@@ -13,7 +13,7 @@ namespace BusinessEntites
         public List<Aktivitet> Aktiviteter { get; set; }
         public string Information { get; set; }
 
-        public UtskicksLista(string Info)
+        public UtskicksLista( List<Användare> folk, string Info)
         {
             this.Information = Info;
         }
