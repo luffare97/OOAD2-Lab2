@@ -31,21 +31,21 @@
             this.inloggadNamn = new System.Windows.Forms.Label();
             this.redigeraProfil = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.dataGridViewMinaListor = new System.Windows.Forms.DataGridView();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.seLista = new System.Windows.Forms.Button();
-            this.seAktivitet = new System.Windows.Forms.Button();
-            this.loggaUt = new System.Windows.Forms.Button();
-            this.InLoggadProgram = new System.Windows.Forms.Label();
-            this.inLoggadJobb = new System.Windows.Forms.Label();
-            this.inLoggadExamensÅr = new System.Windows.Forms.Label();
             this.inLoggadOrt = new System.Windows.Forms.Label();
+            this.inLoggadExamensÅr = new System.Windows.Forms.Label();
+            this.inLoggadJobb = new System.Windows.Forms.Label();
+            this.InLoggadProgram = new System.Windows.Forms.Label();
+            this.loggaUt = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.seLista = new System.Windows.Forms.Button();
+            this.dataGridViewMinaListor = new System.Windows.Forms.DataGridView();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.seAktivitet = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMinaListor)).BeginInit();
+            this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,10 +79,55 @@
             this.groupBox1.Controls.Add(this.inloggadNamn);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(148, 197);
+            this.groupBox1.Size = new System.Drawing.Size(148, 194);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Profil";
+            // 
+            // inLoggadOrt
+            // 
+            this.inLoggadOrt.AutoSize = true;
+            this.inLoggadOrt.Location = new System.Drawing.Point(6, 104);
+            this.inLoggadOrt.Name = "inLoggadOrt";
+            this.inLoggadOrt.Size = new System.Drawing.Size(21, 13);
+            this.inLoggadOrt.TabIndex = 8;
+            this.inLoggadOrt.Text = "Ort";
+            // 
+            // inLoggadExamensÅr
+            // 
+            this.inLoggadExamensÅr.AutoSize = true;
+            this.inLoggadExamensÅr.Location = new System.Drawing.Point(6, 82);
+            this.inLoggadExamensÅr.Name = "inLoggadExamensÅr";
+            this.inLoggadExamensÅr.Size = new System.Drawing.Size(63, 13);
+            this.inLoggadExamensÅr.TabIndex = 7;
+            this.inLoggadExamensÅr.Text = "Examens År";
+            // 
+            // inLoggadJobb
+            // 
+            this.inLoggadJobb.AutoSize = true;
+            this.inLoggadJobb.Location = new System.Drawing.Point(6, 60);
+            this.inLoggadJobb.Name = "inLoggadJobb";
+            this.inLoggadJobb.Size = new System.Drawing.Size(30, 13);
+            this.inLoggadJobb.TabIndex = 6;
+            this.inLoggadJobb.Text = "Jobb";
+            // 
+            // InLoggadProgram
+            // 
+            this.InLoggadProgram.AutoSize = true;
+            this.InLoggadProgram.Location = new System.Drawing.Point(6, 38);
+            this.InLoggadProgram.Name = "InLoggadProgram";
+            this.InLoggadProgram.Size = new System.Drawing.Size(46, 13);
+            this.InLoggadProgram.TabIndex = 5;
+            this.InLoggadProgram.Text = "Program";
+            // 
+            // loggaUt
+            // 
+            this.loggaUt.Location = new System.Drawing.Point(9, 160);
+            this.loggaUt.Name = "loggaUt";
+            this.loggaUt.Size = new System.Drawing.Size(113, 23);
+            this.loggaUt.TabIndex = 4;
+            this.loggaUt.Text = "Logga ut";
+            this.loggaUt.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
@@ -95,6 +140,23 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Mina utskicks listor";
             // 
+            // seLista
+            // 
+            this.seLista.Location = new System.Drawing.Point(15, 305);
+            this.seLista.Name = "seLista";
+            this.seLista.Size = new System.Drawing.Size(75, 23);
+            this.seLista.TabIndex = 2;
+            this.seLista.Text = "Välj lista";
+            this.seLista.UseVisualStyleBackColor = true;
+            // 
+            // dataGridViewMinaListor
+            // 
+            this.dataGridViewMinaListor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewMinaListor.Location = new System.Drawing.Point(15, 19);
+            this.dataGridViewMinaListor.Name = "dataGridViewMinaListor";
+            this.dataGridViewMinaListor.Size = new System.Drawing.Size(224, 280);
+            this.dataGridViewMinaListor.TabIndex = 1;
+            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.seAktivitet);
@@ -106,32 +168,6 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Aktiviteter";
             // 
-            // dataGridViewMinaListor
-            // 
-            this.dataGridViewMinaListor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewMinaListor.Location = new System.Drawing.Point(15, 19);
-            this.dataGridViewMinaListor.Name = "dataGridViewMinaListor";
-            this.dataGridViewMinaListor.Size = new System.Drawing.Size(224, 280);
-            this.dataGridViewMinaListor.TabIndex = 1;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 19);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(199, 280);
-            this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // seLista
-            // 
-            this.seLista.Location = new System.Drawing.Point(15, 305);
-            this.seLista.Name = "seLista";
-            this.seLista.Size = new System.Drawing.Size(75, 23);
-            this.seLista.TabIndex = 2;
-            this.seLista.Text = "Välj lista";
-            this.seLista.UseVisualStyleBackColor = true;
-            // 
             // seAktivitet
             // 
             this.seAktivitet.Location = new System.Drawing.Point(6, 305);
@@ -141,50 +177,14 @@
             this.seAktivitet.Text = "Välj aktivitet";
             this.seAktivitet.UseVisualStyleBackColor = true;
             // 
-            // loggaUt
+            // dataGridView1
             // 
-            this.loggaUt.Location = new System.Drawing.Point(9, 160);
-            this.loggaUt.Name = "loggaUt";
-            this.loggaUt.Size = new System.Drawing.Size(75, 23);
-            this.loggaUt.TabIndex = 4;
-            this.loggaUt.Text = "Logga ut";
-            this.loggaUt.UseVisualStyleBackColor = true;
-            // 
-            // InLoggadProgram
-            // 
-            this.InLoggadProgram.AutoSize = true;
-            this.InLoggadProgram.Location = new System.Drawing.Point(6, 38);
-            this.InLoggadProgram.Name = "InLoggadProgram";
-            this.InLoggadProgram.Size = new System.Drawing.Size(46, 13);
-            this.InLoggadProgram.TabIndex = 5;
-            this.InLoggadProgram.Text = "Program";
-            // 
-            // inLoggadJobb
-            // 
-            this.inLoggadJobb.AutoSize = true;
-            this.inLoggadJobb.Location = new System.Drawing.Point(6, 60);
-            this.inLoggadJobb.Name = "inLoggadJobb";
-            this.inLoggadJobb.Size = new System.Drawing.Size(30, 13);
-            this.inLoggadJobb.TabIndex = 6;
-            this.inLoggadJobb.Text = "Jobb";
-            // 
-            // inLoggadExamensÅr
-            // 
-            this.inLoggadExamensÅr.AutoSize = true;
-            this.inLoggadExamensÅr.Location = new System.Drawing.Point(6, 82);
-            this.inLoggadExamensÅr.Name = "inLoggadExamensÅr";
-            this.inLoggadExamensÅr.Size = new System.Drawing.Size(63, 13);
-            this.inLoggadExamensÅr.TabIndex = 7;
-            this.inLoggadExamensÅr.Text = "Examens År";
-            // 
-            // inLoggadOrt
-            // 
-            this.inLoggadOrt.AutoSize = true;
-            this.inLoggadOrt.Location = new System.Drawing.Point(6, 104);
-            this.inLoggadOrt.Name = "inLoggadOrt";
-            this.inLoggadOrt.Size = new System.Drawing.Size(21, 13);
-            this.inLoggadOrt.TabIndex = 8;
-            this.inLoggadOrt.Text = "Ort";
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(6, 19);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(199, 280);
+            this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // StartAnnan
             // 
@@ -199,8 +199,8 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMinaListor)).EndInit();
+            this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
