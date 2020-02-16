@@ -8,7 +8,7 @@ using System.Linq.Expressions;
 
 namespace BusinessLayer
 {
-    ´public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEntity : class
+    public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEntity : class
     {
         //public AddToRepo()
         //{
