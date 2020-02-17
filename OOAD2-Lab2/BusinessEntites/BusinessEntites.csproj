@@ -51,11 +51,5 @@
     <Compile Include="Student.cs" />
     <Compile Include="UtskicksLista.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\DataLayer\DataLayer.csproj">
-      <Project>{e3ace3f7-82e8-4eb3-a5ee-8ae7724667d0}</Project>
-      <Name>DataLayer</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
