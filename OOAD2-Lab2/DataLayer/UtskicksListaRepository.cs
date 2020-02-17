@@ -3,10 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BusinessEntites;
+using DataLayer;
 
 namespace BusinessLayer
 {
-    class UtskicksListaRepository : GenericRepository
+    public class UtskicksListaRepository : GenericRepository<UtskicksLista>
     {
+        public UtskicksListaRepository(Databas context) : base(context)
+        {
+            Context = context;
+        }
+
+        private Databas Context { get; }
     }
 }

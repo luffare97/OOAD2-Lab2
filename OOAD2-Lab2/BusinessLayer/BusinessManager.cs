@@ -10,5 +10,6 @@ namespace BusinessLayer
 {
     public class BusinessManager
     {
+
     }
 }
