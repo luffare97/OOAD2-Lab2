@@ -52,8 +52,56 @@
     <Compile Include="LoggIn.Designer.cs">
       <DependentUpon>LoggIn.cs</DependentUpon>
     </Compile>
+    <Compile Include="NyAktivitet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NyAktivitet.Designer.cs">
+      <DependentUpon>NyAktivitet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NyUtskickslista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NyUtskickslista.Designer.cs">
+      <DependentUpon>NyUtskickslista.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RedigeraProfilAnnan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RedigeraProfilAnnan.Designer.cs">
+      <DependentUpon>RedigeraProfilAnnan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RedigeraProfilPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RedigeraProfilPersonal.Designer.cs">
+      <DependentUpon>RedigeraProfilPersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SeAktiviteterPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeAktiviteterPersonal.Designer.cs">
+      <DependentUpon>SeAktiviteterPersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SeUtskickslistorPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeUtskickslistorPersonal.Designer.cs">
+      <DependentUpon>SeUtskickslistorPersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpecifikAktivitetAnnan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpecifikAktivitetAnnan.Designer.cs">
+      <DependentUpon>SpecifikAktivitetAnnan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpecifikListaAnnan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpecifikListaAnnan.Designer.cs">
+      <DependentUpon>SpecifikListaAnnan.cs</DependentUpon>
+    </Compile>
     <Compile Include="StartAnnan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +117,12 @@
     <EmbeddedResource Include="LoggIn.resx">
       <DependentUpon>LoggIn.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="NyAktivitet.resx">
+      <DependentUpon>NyAktivitet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NyUtskickslista.resx">
+      <DependentUpon>NyUtskickslista.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -78,6 +132,24 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RedigeraProfilAnnan.resx">
+      <DependentUpon>RedigeraProfilAnnan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RedigeraProfilPersonal.resx">
+      <DependentUpon>RedigeraProfilPersonal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeAktiviteterPersonal.resx">
+      <DependentUpon>SeAktiviteterPersonal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeUtskickslistorPersonal.resx">
+      <DependentUpon>SeUtskickslistorPersonal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpecifikAktivitetAnnan.resx">
+      <DependentUpon>SpecifikAktivitetAnnan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpecifikListaAnnan.resx">
+      <DependentUpon>SpecifikListaAnnan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="StartAnnan.resx">
       <DependentUpon>StartAnnan.cs</DependentUpon>
     </EmbeddedResource>

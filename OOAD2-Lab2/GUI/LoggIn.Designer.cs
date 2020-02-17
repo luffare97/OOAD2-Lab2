@@ -126,7 +126,6 @@
             this.groupBox2.Size = new System.Drawing.Size(264, 54);
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Registrering";
             // 
             // LoggIn
             // 

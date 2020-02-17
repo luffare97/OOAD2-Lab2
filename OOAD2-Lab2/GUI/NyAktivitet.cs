@@ -10,24 +10,14 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class StartPersonal : Form
+    public partial class NyAktivitet : Form
     {
-        public StartPersonal()
+        public NyAktivitet()
         {
             InitializeComponent();
         }
 
-        private void VisaAktiviter_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void redigeraProfil_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
