@@ -16,5 +16,20 @@ namespace BusinessLayer
         }
 
         private Databas Context { get; }
+
+        public static void Läggtillstudent(Databas databas)
+        {
+            databas.Studenter.Add(new Student()
+            {
+                ID = 1,
+                AnvändarId = "S100",
+                ENamn = "Per",
+                EMail = "Snopp@hotmail.com",
+                FNamn = "Persson",
+                TeleNr = 101010022,
+            });
+            databas.SaveChanges();
+        }
+
     }
 }
