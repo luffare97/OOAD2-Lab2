@@ -15,7 +15,7 @@ namespace BusinessEntites
 
         public UtskicksLista( List<Användare> folk, string Info)
         {
-            this.Information = Info;
+            this.Information = Info; 
         }
     }
 }
