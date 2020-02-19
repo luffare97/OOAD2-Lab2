@@ -10,14 +10,14 @@ namespace BusinessLayer
 {
     public class StudentRepository : GenericRepository<Student>
     {
-        public StudentRepository(Databas context) : base(context)
+        public StudentRepository(AppDbContext context) : base(context)
         {
             Context = context;
         }
 
-        private Databas Context { get; }
+        private AppDbContext Context { get; }
 
-        public static void Läggtillstudent(Databas databas)
+        public static void Läggtillstudent(AppDbContext databas)
         {
             databas.Studenter.Add(new Student()
             {

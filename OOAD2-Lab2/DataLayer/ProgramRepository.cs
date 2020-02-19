@@ -10,12 +10,12 @@ namespace BusinessLayer
 {
     public class ProgramRepository : GenericRepository<Program>
     {
-        public ProgramRepository(Databas context) : base(context)
+        public ProgramRepository(AppDbContext context) : base(context)
         {
             Context = context;
         }
 
-        private Databas Context { get; }
+        private AppDbContext Context { get; }
 
         public IEnumerable<Program> GetPrograms()
         {

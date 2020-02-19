@@ -125,7 +125,7 @@
   <ItemGroup>
     <Compile Include="AktivitetRepository.cs" />
     <Compile Include="AlumnRepository.cs" />
-    <Compile Include="Databas.cs" />
+    <Compile Include="AppDbContext.cs" />
     <Compile Include="DataManager.cs" />
     <Compile Include="GenericRepository.cs" />
     <Compile Include="IAktivitetRepository.cs" />

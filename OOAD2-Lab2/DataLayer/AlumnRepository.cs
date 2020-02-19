@@ -11,12 +11,12 @@ namespace BusinessLayer
 {
     public class AlumnRepository : GenericRepository<Alumn>, IAlumnRepository
     {
-        public AlumnRepository(Databas context) : base(context)
+        public AlumnRepository(AppDbContext context) : base(context)
         {
             Context = context;
         }
 
-        private Databas Context { get; }
+        private AppDbContext Context { get; }
 
         public IEnumerable<Alumn> GetAllSystemvetare()
         {

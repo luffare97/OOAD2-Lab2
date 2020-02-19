@@ -10,11 +10,11 @@ namespace BusinessLayer
 {
     public class UtskicksListaRepository : GenericRepository<UtskicksLista>
     {
-        public UtskicksListaRepository(Databas context) : base(context)
+        public UtskicksListaRepository(AppDbContext context) : base(context)
         {
             Context = context;
         }
 
-        private Databas Context { get; }
+        private AppDbContext Context { get; }
     }
 }

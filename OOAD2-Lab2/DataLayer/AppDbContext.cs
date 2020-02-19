@@ -7,9 +7,9 @@ namespace DataLayer
     using BusinessEntites;
     using Microsoft.EntityFrameworkCore;
 
-    public partial class Databas : DbContext
+    public partial class AppDbContext : DbContext
     {
-        public Databas()
+        public AppDbContext()
             : base("name=Databas")
         {
         }

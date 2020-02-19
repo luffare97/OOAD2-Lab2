@@ -10,12 +10,12 @@ namespace BusinessLayer
 {
     public class GenericRepository<TEntity> where TEntity : class
     {
-        public GenericRepository(Databas context)
+        public GenericRepository(AppDbContext context)
         {
             Context = context;
         }
 
-        private Databas Context { get; }
+        private AppDbContext Context { get; }
 
         //public AddToRepo()
         //{

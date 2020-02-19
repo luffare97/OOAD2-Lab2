@@ -11,12 +11,12 @@ namespace BusinessLayer
 {
     public class AktivitetRepository : GenericRepository<Aktivitet>, IAktivitetRepository
     {
-        public AktivitetRepository(Databas context) : base(context)
+        public AktivitetRepository(AppDbContext context) : base(context)
         {
             Context = context;
         }
 
-        private Databas Context { get; }
+        private AppDbContext Context { get; }
 
         public IEnumerable<Aktivitet> GetAllAktiviteter()
         {

@@ -10,7 +10,7 @@ namespace BusinessLayer
 {
     public class UnitOfWork
     {
-        public UnitOfWork(Databas databas)
+        public UnitOfWork(AppDbContext databas)
         {
             Databas = databas;
 
@@ -29,6 +29,6 @@ namespace BusinessLayer
         public UtskicksListaRepository UtskicksListaRepository { get; set; }
         public ProgramRepository ProgramRepository { get; set; }
 
-        public Databas Databas { get; }
+        public AppDbContext Databas { get; }
     }
 }

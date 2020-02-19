@@ -11,12 +11,12 @@ namespace BusinessLayer
 {
     public class PersonalRepository : GenericRepository<Personal>
     {
-        public PersonalRepository(Databas context) : base(context)
+        public PersonalRepository(AppDbContext context) : base(context)
         {
             Context = context;
         }
 
-        private Databas Context { get; }
+        private AppDbContext Context { get; }
 
 
     }
