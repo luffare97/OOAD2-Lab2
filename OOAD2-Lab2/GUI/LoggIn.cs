@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BusinessEntites;
+using DataLayer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,13 +10,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace GUI
 {
+    
     public partial class LoggIn : Form
     {
+
+        
+
         public LoggIn()
         {
             InitializeComponent();
+            
+
         }
 
         private void btnLoggaIn_Click(object sender, EventArgs e)

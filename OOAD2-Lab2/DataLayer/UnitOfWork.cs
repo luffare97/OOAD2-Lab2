@@ -6,7 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 using BusinessEntites;
 
-namespace BusinessLayer
+
+namespace DataLayer
 {
     public class UnitOfWork
     {

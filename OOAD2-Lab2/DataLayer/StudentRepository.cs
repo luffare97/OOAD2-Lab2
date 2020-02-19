@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using BusinessEntites;
 using DataLayer;
 
-namespace BusinessLayer
+namespace DataLayer
 {
     public class StudentRepository : GenericRepository<Student>
     {
@@ -15,8 +15,8 @@ namespace BusinessLayer
             Context = context;
         }
 
-        private AppDbContext Context { get; }
-
+        private AppDbContext Context { get; set; }
+        
         public static void Läggtillstudent(AppDbContext databas)
         {
             databas.Studenter.Add(new Student()
@@ -30,6 +30,6 @@ namespace BusinessLayer
             });
             databas.SaveChanges();
         }
-
+        
     }
 }

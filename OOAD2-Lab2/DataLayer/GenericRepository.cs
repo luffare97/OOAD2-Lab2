@@ -6,7 +6,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BusinessLayer
+
+namespace DataLayer
 {
     public class GenericRepository<TEntity> where TEntity : class
     {
@@ -21,12 +22,12 @@ namespace BusinessLayer
         //{
 
         //}
-
+        /*
         public TEntity Get()
         {
-            return Context.Set<TEntity>.Get();
+           return Context.Set<TEntity>().Get();
         }
-
+        */
 
         //public GetAll()
         //{

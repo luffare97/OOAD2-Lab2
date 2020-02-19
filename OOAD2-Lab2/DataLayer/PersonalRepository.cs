@@ -7,7 +7,7 @@ using System.Data;
 using BusinessEntites;
 using DataLayer;
 
-namespace BusinessLayer
+namespace DataLayer
 {
     public class PersonalRepository : GenericRepository<Personal>
     {

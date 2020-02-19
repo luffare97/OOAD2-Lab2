@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BusinessEntites;
-using DataLayer;
 
-namespace BusinessLayer
+
+
+namespace DataLayer
 {
     public class ProgramRepository : GenericRepository<Program>
     {

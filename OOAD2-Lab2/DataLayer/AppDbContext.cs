@@ -1,14 +1,25 @@
-namespace DataLayer
-{
+
+
     using System;
     using System.Data;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Linq;
     using BusinessEntites;
     using Microsoft.EntityFrameworkCore;
-
-    public partial class AppDbContext : DbContext
+    //using System.Data.Entity;
+    using System.Data.SqlClient;
+    
+namespace DataLayer
+{
+    public class AppDbContext : DbContext
     {
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer("data source=(localdb)\\mssqllocaldb;Initial Catalog=oosu2lab2;user id=;password=;");
+            base.OnConfiguring(optionsBuilder);
+        }
+
 
         public virtual DbSet<Alumn> Alumns { get; set; }
         public virtual DbSet<Personal> Personals { get; set; }
@@ -19,14 +30,21 @@ namespace DataLayer
         public virtual DbSet<Aktivitet> Aktiviteter { get; set; }
         public virtual DbSet<Program> Programs { get; set; }
 
-        //protected override void OnModelCreating(DbModelBuilder modelBuilder)
-        //{
 
-        //}
 
+
+
+        
+        
+
+
+
+        /*
         public AppDbContext() : base("Databas")
         {
 
         }
+        */
+        
     }
 }

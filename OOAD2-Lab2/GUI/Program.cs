@@ -6,6 +6,8 @@ using System.Windows.Forms;
 using BusinessLayer;
 using DataLayer;
 
+
+
 namespace GUI
 {
     static class Program
@@ -19,6 +21,8 @@ namespace GUI
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new LoggIn());
+            
+
         }
     }
 }

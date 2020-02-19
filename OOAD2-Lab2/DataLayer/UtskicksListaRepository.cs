@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using BusinessEntites;
 using DataLayer;
 
-namespace BusinessLayer
+namespace DataLayer
 {
     public class UtskicksListaRepository : GenericRepository<UtskicksLista>
     {

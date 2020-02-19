@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 
-namespace BusinessLayer
+namespace DataLayer
 {
     public class AktivitetRepository : GenericRepository<Aktivitet>, IAktivitetRepository
     {

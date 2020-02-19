@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BusinessLayer
+namespace DataLayer
 {
     public class AlumnRepository : GenericRepository<Alumn>, IAlumnRepository
     {

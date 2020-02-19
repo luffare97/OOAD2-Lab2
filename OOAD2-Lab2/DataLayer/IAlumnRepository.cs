@@ -1,7 +1,7 @@
 ﻿using BusinessEntites;
 using System.Collections.Generic;
 
-namespace BusinessLayer
+namespace DataLayer
 {
     public interface IAlumnRepository
     {
