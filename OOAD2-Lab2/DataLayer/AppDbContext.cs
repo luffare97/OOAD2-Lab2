@@ -24,9 +24,9 @@ namespace DataLayer
 
         //}
 
-        public AppDbContext() : base("Databas")
-        {
+        //public AppDbContext() : base("Databas")
+        //{
 
-        }
+        //}
     }
 }

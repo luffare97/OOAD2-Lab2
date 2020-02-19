@@ -22,10 +22,10 @@ namespace BusinessLayer
 
         //}
 
-        public TEntity Get()
-        {
-            return Context.Set<TEntity>.Get();
-        }
+        //public TEntity Get()
+        //{
+        //    return Context.Set<TEntity>.Get();
+        //}
 
 
         //public GetAll()
