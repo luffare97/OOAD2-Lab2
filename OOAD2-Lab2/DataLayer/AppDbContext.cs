@@ -5,23 +5,22 @@
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Linq;
     using BusinessEntites;
-    using Microsoft.EntityFrameworkCore;
-    //using System.Data.Entity;
+    //using Microsoft.EntityFrameworkCore;
+    using System.Data.Entity;
     using System.Data.SqlClient;
     
 namespace DataLayer
 {
     public class AppDbContext : DbContext
     {
-
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        
+        public AppDbContext()
+            : base("osu2014")
         {
-            optionsBuilder.UseSqlServer("data source=(localdb)\\mssqllocaldb;Initial Catalog=oosu2lab2;user id=;password=;");
-            base.OnConfiguring(optionsBuilder);
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<AppDbContext,DataLayer.Migrations.Configuration>());
         }
 
-
-        public virtual DbSet<Alumn> Alumns { get; set; }
+        public DbSet<Alumn> Alumns { get; set; }
         public virtual DbSet<Personal> Personals { get; set; }
         public virtual DbSet<Användare> Användares { get; set; }
         public virtual DbSet<Entity> Entitet { get; set; }
@@ -30,19 +29,12 @@ namespace DataLayer
         public virtual DbSet<Aktivitet> Aktiviteter { get; set; }
         public virtual DbSet<Program> Programs { get; set; }
 
-
-
-
-
-        
-        
-
-
-
-        /*
-        public AppDbContext() : base("Databas")
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-
+            base.OnModelCreating(modelBuilder);
         }
+
+
+
     }
 }

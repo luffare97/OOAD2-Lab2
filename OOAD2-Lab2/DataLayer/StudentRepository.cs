@@ -17,19 +17,7 @@ namespace DataLayer
 
         private AppDbContext Context { get; set; }
         
-        public static void Läggtillstudent(AppDbContext databas)
-        {
-            databas.Studenter.Add(new Student()
-            {
-                ID = 1,
-                AnvändarId = "S100",
-                ENamn = "Per",
-                EMail = "Snopp@hotmail.com",
-                FNamn = "Persson",
-                TeleNr = 101010022,
-            });
-            databas.SaveChanges();
-        }
+      
         
     }
 }
