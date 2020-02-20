@@ -1,13 +1,7 @@
-﻿using BusinessEntites;
+﻿
+using BusinessEntites;
 using DataLayer;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
@@ -16,12 +10,31 @@ namespace GUI
     
     public partial class LoggIn : Form
     {
-
         
 
-        public LoggIn()
+        public static void Populate(AppDbContext appDbContext)
+        {
+            appDbContext.Studenter.Add(new Student()
+            {
+                AnvändarId = "s19",
+                ID = 1,
+                EMail = "något@hotmail.com",
+                ENamn = "Erik",
+                FNamn = "hej",
+                TeleNr = 50550550,
+
+            });
+
+            appDbContext.SaveChanges();
+        }
+            public LoggIn()
         {
             InitializeComponent();
+
+            AppDbContext appDbContext = new AppDbContext();
+            //appDbContext.Database.EnsureDeleted();
+            appDbContext.Database.CreateIfNotExists();
+            Seed.Populate(appDbContext);
             
 
         }

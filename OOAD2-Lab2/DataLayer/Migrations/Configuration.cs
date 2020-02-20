@@ -10,6 +10,7 @@
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
+            ContextKey = "OOAD2-Lab2.AppDbContext";
         }
 
         protected override void Seed(DataLayer.AppDbContext context)

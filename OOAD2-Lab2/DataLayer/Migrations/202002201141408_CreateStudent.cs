@@ -8,6 +8,10 @@
     {
         public override void Up()
         {
+
+
+
+            /*
             CreateTable(
                 "dbo.Entities",
                 c => new
@@ -55,7 +59,7 @@
                 .Index(t => t.UtskicksLista_ID)
                 .Index(t => t.UtskicksLista_ID1)
                 .Index(t => t.UtskicksLista_ID2);
-            
+            */
         }
         
         public override void Down()

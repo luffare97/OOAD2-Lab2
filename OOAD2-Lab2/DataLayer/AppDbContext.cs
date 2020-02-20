@@ -13,27 +13,32 @@ namespace DataLayer
 {
     public class AppDbContext : DbContext
     {
+        public DbSet<Alumn> Alumns { get; set; }
+        public DbSet<Personal> Personals { get; set; }
+        public DbSet<Användare> Användares { get; set; }
+        public DbSet<Entity> Entitet { get; set; }
+        public DbSet<Student> Studenter { get; set; }
+        public DbSet<UtskicksLista> UtskicksListor { get; set; }
+        public DbSet<Aktivitet> Aktiviteter { get; set; }
+        public DbSet<Program> Programs { get; set; }
+
         
+
         public AppDbContext()
             : base("osu2014")
         {
-            Database.SetInitializer(new MigrateDatabaseToLatestVersion<AppDbContext,DataLayer.Migrations.Configuration>());
+
+            //Database.SetInitializer(new MigrateDatabaseToLatestVersion<AppDbContext,Migrations.Configuration>());
         }
 
-        public DbSet<Alumn> Alumns { get; set; }
-        public virtual DbSet<Personal> Personals { get; set; }
-        public virtual DbSet<Användare> Användares { get; set; }
-        public virtual DbSet<Entity> Entitet { get; set; }
-        public virtual DbSet<Student> Studenter { get; set; }
-        public virtual DbSet<UtskicksLista> UtskicksListor { get; set; }
-        public virtual DbSet<Aktivitet> Aktiviteter { get; set; }
-        public virtual DbSet<Program> Programs { get; set; }
-
+        /*
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
         }
-
+        */
+       
+        
 
 
     }
