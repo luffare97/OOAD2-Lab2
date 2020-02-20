@@ -22,7 +22,7 @@ namespace DataLayer
                 
             }) ;
 
-            //appDbContext.SaveChanges();
+            appDbContext.SaveChanges();
         
         }
     }

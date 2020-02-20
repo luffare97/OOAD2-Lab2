@@ -154,9 +154,13 @@
     <Compile Include="Migrations\202002201141408_CreateStudent.designer.cs">
       <DependentUpon>202002201141408_CreateStudent.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202002201636375_CreateAkumn.cs" />
-    <Compile Include="Migrations\202002201636375_CreateAkumn.designer.cs">
-      <DependentUpon>202002201636375_CreateAkumn.cs</DependentUpon>
+    <Compile Include="Migrations\202002201821334_CreateStudent1.cs" />
+    <Compile Include="Migrations\202002201821334_CreateStudent1.designer.cs">
+      <DependentUpon>202002201821334_CreateStudent1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002201828153_CreateStudent2.cs" />
+    <Compile Include="Migrations\202002201828153_CreateStudent2.designer.cs">
+      <DependentUpon>202002201828153_CreateStudent2.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PersonalRepository.cs" />
@@ -181,8 +185,11 @@
     <EmbeddedResource Include="Migrations\202002201141408_CreateStudent.resx">
       <DependentUpon>202002201141408_CreateStudent.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202002201636375_CreateAkumn.resx">
-      <DependentUpon>202002201636375_CreateAkumn.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202002201821334_CreateStudent1.resx">
+      <DependentUpon>202002201821334_CreateStudent1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002201828153_CreateStudent2.resx">
+      <DependentUpon>202002201828153_CreateStudent2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
